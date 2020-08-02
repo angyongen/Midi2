@@ -105,6 +105,7 @@ int readMidiEvent(midiEvent & e, MIDIWrapperState & state, S & inputstate, I & i
 		case (midiController):
 		//controller change, controller no (0x0-0x77), controller value
 		//channel mode message, message (0x78-0x7F), [message dependent value]
+		break;
 		case (midiPitchBend)://pitch bend, 2 bytes following, lsb, msb
 		
 		e.length = 2;
